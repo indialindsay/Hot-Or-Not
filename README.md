@@ -1,10 +1,9 @@
 # Hot Or Not? 
 
-## Was pop music in the 2000's formulaic? Can we predict whether a song will be a hit or a flop using the measurable patterns within a song's features? 
-
+## Was pop music in the 2000's formulaic? Did Britney Spears, Avril Lavigne, and Usher know something the rest of us didn't? 
 ### The data:
 
-For this analysis, I'll be using a dataset consisting of 5,872 songs from 2000 through 2009. It consists of 15 quantitative and qualitative metrics for each song with a label of whether the song was a hit or a flop. If the song was featured in BillBoard’s weekly list of Hot-100 tracks at least once throughout the decade, the song is considered a hit. For a song to be a flop, either the song itself or the artist of the song were not featured in any Hot-100 lists. 
+The goal of this analysis is to predict whether a song will be a hit or a flop using the measurable patterns within a song's features. I'll be using a dataset consisting of 5,872 songs from 2000 through 2009. It consists of 15 quantitative and qualitative metrics for each song with a label of whether the song was a hit or a flop. If the song was featured in BillBoard’s weekly list of Hot-100 tracks at least once throughout the decade, the song is considered a hit. For a song to be a flop, either the song itself or the artist of the song were not featured in any Hot-100 lists. 
 
 The features provided for each song were the following: 
 - track: name of the song
