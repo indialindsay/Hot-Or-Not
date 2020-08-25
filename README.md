@@ -26,3 +26,5 @@ The features provided for each song were the following:
 - chorus_hit: a measure of when the chorus begins for the song
 - sections: the number of sections the song contains
 
+Data sourced from kaggle: https://www.kaggle.com/theoverman/the-spotify-hit-predictor-dataset
+
