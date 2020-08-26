@@ -3,7 +3,7 @@
 rm(list=ls()) #Removes every object from your environment
 
 #Read data
-spotify <- read.csv("~/spotify_2000.csv")
+spotify <- read.csv("C:/Users/india/Documents/MSBASummer/data analytics/Data Project/No_Outliers_Spotify.csv")
 #removing index which weirdly came up as a column 
 spotify = na.omit(spotify[,-1])
 set.seed(123)
@@ -15,9 +15,6 @@ n = dim(spotify)[1] #Sample size
 tr = sample(1:n, 
             size = 3700, #reflects about 70% of our dataset
             replace = FALSE) #Without replacement
-
-#removing non numeric variables (artist, uri)
-spotify = spotify[,-c(1,2)]
 
 #scale data
 train = data.frame(scale(spotify[tr,]))
@@ -45,13 +42,13 @@ regForward = step(null, #The most simple model
                   k=log(length(tr))) #This is BIC
 
 #forward regression selected: instrumentalness + danceability + loudness + energy + 
-#acousticness + mode + duration_ms
+#acousticness + mode + time_signature
 
 regBack = step(full, #Starting with the full model
                direction="backward", #And deleting variables
                k=log(length(tr))) #This is BIC
 #backward selected: danceability + energy + loudness + mode + acousticness + 
-#instrumentalness + duration_ms
+#instrumentalness + time_signature
 
 #hybrid approach.. mix of both forward and backwards
 regForward = step(null, #The most simple model
@@ -60,4 +57,4 @@ regForward = step(null, #The most simple model
                   k=log(length(tr))) #This is BIC
 
 #hybrid selected: instrumentalness + danceability + loudness + energy + 
-#acousticness + mode + duration_ms
+#acousticness + mode + time_signature
