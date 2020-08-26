@@ -27,8 +27,6 @@ The features provided for each song were the following:
 
 Data sourced from kaggle: https://www.kaggle.com/theoverman/the-spotify-hit-predictor-dataset
 
-## What are the above files? 
-
 ## Results:
 I attempted to predict song popularity using KNN, Logistic Regression, and a Decision Tree. Logistic Regression performed the best, with 82% test accuracy. From the decision tree, we learned that danceability and instrumentalness have the greatest influence over a song's popularity.
 
