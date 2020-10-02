@@ -16,11 +16,16 @@ Data sourced from [kaggle](https://www.kaggle.com/theoverman/the-spotify-hit-pre
 
 ### Exploring The Data
 
-We initially compared the mean values of all of the characteristics for both hits and flops. We found that hits often have higher values in danceability, energy, mode, speechiness, valence, and time signature. 
+We initially compared the mean values of all of the characteristics for both hits and flops. We found that hits often have higher values in danceability, energy, mode, speechiness, valence, and time signature. Looking at the correlation between variables, we identified a strong positive relationship between a track's energy and loudness and between a track's valence and danceability. Typically, we can expect songs with greater energy to be quite loud and good for dancing.
 
-Additionally, we were interested in examining the role a song’s title plays in the actual features of the song. We observed whether song titles containing ‘!’ actually had higher levels of enthusiasm. We examined the mean levels of danceability, valence, and energy for songs with titles containing an exclamation point compared with songs that do not. We found that such songs had a mean danceability, valence, and energy 0.11, 0.13, and 0.12, respectively greater than songs with titles without an exclamation point. 
+We were interested in examining the role a song’s title plays in the actual features of the song. We observed whether song titles containing ‘!’ actually had higher levels of enthusiasm. We examined the mean levels of danceability, valence, and energy for songs with titles containing an exclamation point compared with songs that do not. We found that such songs had a mean danceability, valence, and energy 0.11, 0.13, and 0.12, respectively greater than songs with titles without an exclamation point. 
 
 ![image](https://user-images.githubusercontent.com/68126147/94950216-dd132100-04a7-11eb-9e56-0021231e0446.png)
+
+We also looked into which artists released the greatest number of hits vs flops and found that the 2000's (at least how this decade was reflected in our dataset) had a preference for country music and a dislike of heavy of metal. (If you have a preference for more alternative music and extreme metal is your taste, I definitely recommend checking out Iron Maiden or Nausea.)
+
+![image](https://user-images.githubusercontent.com/68126147/94962669-70eee800-04bc-11eb-924d-930c07107afc.png)
+
 
 ## Results & Interpretation:
 
